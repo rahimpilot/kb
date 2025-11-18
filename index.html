@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Desk Knowledge Base</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>📚 Service Desk Knowledge Base</h1>
+                <p class="subtitle">Quick solutions and guides for common issues</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-section">
+            <input type="text" id="searchInput" class="search-box" placeholder="Search for articles, solutions, or keywords...">
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All Articles</button>
+            <button class="filter-btn" data-category="hardware">Hardware</button>
+            <button class="filter-btn" data-category="software">Software</button>
+            <button class="filter-btn" data-category="network">Network</button>
+            <button class="filter-btn" data-category="account">Account Access</button>
+            <button class="filter-btn" data-category="troubleshooting">Troubleshooting</button>
+        </div>
+
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#" data-category="hardware">🖥️ Hardware Issues</a></li>
+                    <li><a href="#" data-category="software">💻 Software & Applications</a></li>
+                    <li><a href="#" data-category="network">🌐 Network & Connectivity</a></li>
+                    <li><a href="#" data-category="account">👤 Account Access</a></li>
+                    <li><a href="#" data-category="troubleshooting">🔧 General Troubleshooting</a></li>
+                    <li><a href="team.html">👥 Our Team</a></li>
+                </ul>
+
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" class="quick-link">Submit a Ticket</a></li>
+                        <li><a href="contact.html" class="quick-link">Contact Support</a></li>
+                        <li><a href="#" class="quick-link">FAQ</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="articles-section">
+                <h2 id="sectionTitle">All Articles</h2>
+                <div id="articlesGrid" class="articles-grid">
+                    
+                    <!-- Sample Article Cards - You can duplicate and modify these -->
+                    <article class="article-card" data-category="hardware">
+                        <div class="article-header">
+                            <span class="category-badge hardware">Hardware</span>
+                            <span class="article-date">2024-01-15</span>
+                        </div>
+                        <h3 class="article-title">Computer Won't Turn On</h3>
+                        <p class="article-excerpt">Step-by-step guide to diagnose and fix computer power issues...</p>
+                        <a href="articles/hardware-wont-turn-on.html" class="article-link">Read More →</a>
+                    </article>
+
+                    <article class="article-card" data-category="software">
+                        <div class="article-header">
+                            <span class="category-badge software">Software</span>
+                            <span class="article-date">2024-01-14</span>
+                        </div>
+                        <h3 class="article-title">How to Reset Your Password</h3>
+                        <p class="article-excerpt">Quick guide for resetting forgotten passwords across various applications...</p>
+                        <a href="articles/password-reset.html" class="article-link">Read More →</a>
+                    </article>
+
+                    <article class="article-card" data-category="network">
+                        <div class="article-header">
+                            <span class="category-badge network">Network</span>
+                            <span class="article-date">2024-01-13</span>
+                        </div>
+                        <h3 class="article-title">WiFi Connection Issues</h3>
+                        <p class="article-excerpt">Troubleshoot and resolve common wireless network connectivity problems...</p>
+                        <a href="articles/wifi-issues.html" class="article-link">Read More →</a>
+                    </article>
+
+                    <article class="article-card" data-category="software">
+                        <div class="article-header">
+                            <span class="category-badge software">Software</span>
+                            <span class="article-date">2024-01-12</span>
+                        </div>
+                        <h3 class="article-title">Email Configuration Guide</h3>
+                        <p class="article-excerpt">Set up your email client with proper IMAP/SMTP settings...</p>
+                        <a href="articles/email-config.html" class="article-link">Read More →</a>
+                    </article>
+
+                    <article class="article-card" data-category="account">
+                        <div class="article-header">
+                            <span class="category-badge account">Account Access</span>
+                            <span class="article-date">2024-01-11</span>
+                        </div>
+                        <h3 class="article-title">Account Locked Out</h3>
+                        <p class="article-excerpt">What to do when your account is locked and how to prevent it...</p>
+                        <a href="articles/account-locked.html" class="article-link">Read More →</a>
+                    </article>
+
+                    <article class="article-card" data-category="troubleshooting">
+                        <div class="article-header">
+                            <span class="category-badge troubleshooting">Troubleshooting</span>
+                            <span class="article-date">2024-01-10</span>
+                        </div>
+                        <h3 class="article-title">Printer Not Responding</h3>
+                        <p class="article-excerpt">Common printer issues and how to resolve them quickly...</p>
+                        <a href="articles/printer-issues.html" class="article-link">Read More →</a>
+                    </article>
+
+                </div>
+
+                <div id="noResults" class="no-results" style="display: none;">
+                    <p>No articles found matching your search.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Service Desk Knowledge Base. All rights reserved.</p>
+            <p>Need help? <a href="#" class="footer-link">Contact Support</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

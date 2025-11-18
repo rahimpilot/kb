@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Support - Service Desk KB</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-content h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-box {
+            background-color: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .contact-box h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .contact-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 2rem;
+            transition: all 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-dark);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>📚 Service Desk Knowledge Base</h1>
+                <p class="subtitle">Quick solutions and guides for common issues</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-content">
+            <h1>Contact Support</h1>
+            <p>Our service desk team is here to help you with any technical issues or questions.</p>
+
+            <div class="contact-info">
+                <div class="contact-box">
+                    <h2>📞 Phone Support</h2>
+                    <div class="contact-number">877-660-2041</div>
+                    <p>Call us for immediate assistance with urgent issues.</p>
+                    <p><strong>Available:</strong> Monday - Friday, 8:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-button">← Back to Knowledge Base</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Service Desk Knowledge Base. All rights reserved.</p>
+            <p>Need help? <a href="contact.html" class="footer-link">Contact Support</a></p>
+        </div>
+    </footer>
+</body>
+</html>
