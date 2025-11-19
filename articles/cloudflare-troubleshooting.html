@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudflare Troubleshooting - Service Desk KB</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .article-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .article-content h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .article-content h3 {
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .article-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1rem 0 1rem 2rem;
+            line-height: 1.8;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .step {
+            background-color: var(--bg-color);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .step-number {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .warning-box {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+
+        .warning-box strong {
+            color: #92400e;
+        }
+
+        .info-box {
+            background-color: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+
+        .info-box strong {
+            color: #1e40af;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 2rem;
+            transition: all 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .related-articles {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .related-articles h3 {
+            margin-bottom: 1rem;
+        }
+
+        .related-link {
+            display: block;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background-color: var(--bg-color);
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: all 0.2s ease;
+        }
+
+        .related-link:hover {
+            background-color: var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>📚 Service Desk Knowledge Base</h1>
+                <p class="subtitle">Quick solutions and guides for common issues</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="article-content">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a> / <a href="../index.html">Network & Connectivity</a> / Cloudflare Troubleshooting
+            </nav>
+
+            <h1>Cloudflare Troubleshooting</h1>
+            
+            <div class="article-meta">
+                <span class="category-badge network">Network</span>
+                <span class="article-date">📅 Last Updated: November 19, 2025</span>
+            </div>
+
+            <!-- Article Content Section -->
+            <section>
+                <p><strong>This guide helps you troubleshoot common Cloudflare configuration and connectivity issues.</strong></p>
+                
+                <h2>Overview</h2>
+                <p>Cloudflare provides DNS, CDN, and security services. Issues can arise from DNS propagation, firewall rules, or configuration errors. This guide covers the most common troubleshooting steps.</p>
+
+                <div class="info-box">
+                    <strong>💡 Tip:</strong> Always check Cloudflare's status page at status.cloudflare.com before troubleshooting.
+                </div>
+
+                <h2>Step-by-Step Troubleshooting</h2>
+                
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Check Cloudflare Status</strong>
+                    <p>Visit <a href="https://www.cloudflare.com/status/" target="_blank">Cloudflare Status</a> to ensure there are no ongoing incidents affecting your service.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Verify DNS Configuration</strong>
+                    <p>Use tools like dig or nslookup to check if your domain's DNS records are correctly pointing to Cloudflare's nameservers.</p>
+                    <p>Example: <code>nslookup yourdomain.com</code></p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Check SSL/TLS Settings</strong>
+                    <p>Ensure your SSL/TLS encryption mode is set correctly in the Cloudflare dashboard. Common issues occur with "Flexible" mode.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <strong>Review Firewall Rules</strong>
+                    <p>Check if any WAF rules or firewall rules are blocking legitimate traffic. Temporarily disable them to test.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <strong>Clear DNS Cache</strong>
+                    <p>Flush your local DNS cache and try accessing the site again. On Windows: <code>ipconfig /flushdns</code></p>
+                </div>
+
+                <div class="warning-box">
+                    <strong>⚠️ Warning:</strong> Changing DNS settings can take up to 24-48 hours to propagate globally. Be patient and avoid making multiple changes simultaneously.
+                </div>
+
+                <h2>Common Issues and Solutions</h2>
+                
+                <h3>Site Not Loading</h3>
+                <ul>
+                    <li><strong>DNS not propagated:</strong> Wait for DNS propagation or check nameserver settings</li>
+                    <li><strong>SSL certificate issues:</strong> Verify SSL mode and certificate validity</li>
+                    <li><strong>Origin server down:</strong> Ensure your server is responding to Cloudflare's requests</li>
+                </ul>
+
+                <h3>5xx Errors</h3>
+                <ul>
+                    <li><strong>502 Bad Gateway:</strong> Origin server is not responding</li>
+                    <li><strong>503 Service Unavailable:</strong> Server overload or maintenance</li>
+                    <li><strong>504 Gateway Timeout:</strong> Origin server took too long to respond</li>
+                </ul>
+
+                <h3>Access Denied (403)</h3>
+                <ul>
+                    <li><strong>WAF blocking:</strong> Check firewall rules and logs</li>
+                    <li><strong>IP restrictions:</strong> Verify IP whitelist/blacklist settings</li>
+                    <li><strong>Rate limiting:</strong> Check if requests are being rate limited</li>
+                </ul>
+
+                <h2>Advanced Troubleshooting</h2>
+                
+                <h3>Check Cloudflare Logs</h3>
+                <p>Access your Cloudflare dashboard and review the firewall events, DNS query logs, and analytics to identify patterns.</p>
+
+                <h3>Test with Different Networks</h3>
+                <p>Try accessing your site from different networks or devices to isolate if the issue is network-specific.</p>
+
+                <h3>Use Cloudflare Diagnostic Tools</h3>
+                <ul>
+                    <li>Cloudflare Speed Test</li>
+                    <li>DNS Checker</li>
+                    <li>SSL Checker</li>
+                </ul>
+
+                <h2>Getting Help</h2>
+                <p>If you cannot resolve the issue:</p>
+                <ul>
+                    <li>Contact your system administrator</li>
+                    <li>Check Cloudflare's community forums</li>
+                    <li>Open a support ticket with Cloudflare</li>
+                </ul>
+
+                <h2>Summary</h2>
+                <p>Most Cloudflare issues can be resolved by checking DNS propagation, SSL settings, and firewall rules. Always start with basic checks and work your way to more advanced troubleshooting.</p>
+            </section>
+
+            <!-- Related Articles -->
+            <div class="related-articles">
+                <h3>Related Articles</h3>
+                <a href="wifi-issues.html" class="related-link">→ WiFi Connection Issues</a>
+                <a href="#" class="related-link">→ DNS Configuration Guide</a>
+                <a href="#" class="related-link">→ SSL Certificate Setup</a>
+            </div>
+
+            <a href="../index.html" class="back-button">← Back to Knowledge Base</a>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Service Desk Knowledge Base. All rights reserved.</p>
+            <p>Need help? <a href="#" class="footer-link">Contact Support</a></p>
+        </div>
+    </footer>
+</body>
+</html>
