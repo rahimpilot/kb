@@ -55,7 +55,7 @@
                 <div class="team-card">
                     <div class="team-card-header">
                         <div class="member-avatar">
-                            <img src="Public/image.png" alt="Jacob Forbes" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                            <img src="Public/image.png" alt="Jacob Forbes" class="clickable-avatar" onclick="openModal(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                         </div>
                     </div>
                     <div class="team-card-body">
@@ -86,5 +86,32 @@
             <p>Need help? <a href="contact.html" class="footer-link">Contact Support</a></p>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
