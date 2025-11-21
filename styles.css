@@ -553,6 +553,8 @@ footer p {
 .clickable-avatar {
     cursor: pointer;
     transition: transform 0.2s;
+    position: relative;
+    z-index: 1;
 }
 
 .clickable-avatar:hover {
