@@ -57,6 +57,7 @@ const categories = [
   { key: 'hardware', label: 'Hardware' },
   { key: 'software', label: 'Software' },
   { key: 'network', label: 'Network' },
+  { key: 'printer', label: 'Printer Issues' },
   { key: 'account', label: 'Account Access' },
   { key: 'troubleshooting', label: 'Troubleshooting' }
 ]
@@ -80,6 +81,7 @@ function App() {
       'hardware': 'Hardware Issues',
       'software': 'Software & Applications',
       'network': 'Network & Connectivity',
+      'printer': 'Printer Issues',
       'account': 'Account Access',
       'troubleshooting': 'General Troubleshooting'
     }
@@ -176,6 +178,7 @@ function Sidebar({ categories, selectedCategory, onCategoryChange }) {
               {category.key === 'hardware' && '🖥️ '}
               {category.key === 'software' && '💻 '}
               {category.key === 'network' && '🌐 '}
+              {category.key === 'printer' && '🖨️ '}
               {category.key === 'account' && '👤 '}
               {category.key === 'troubleshooting' && '🔧 '}
               {category.label}
