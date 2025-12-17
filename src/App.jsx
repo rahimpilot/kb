@@ -13,7 +13,7 @@ const articles = [
   {
     id: 2,
     category: 'software',
-    title: 'How to Reset Your Password',
+    title: 'OKTA and Login issues',
     excerpt: 'Quick guide for resetting forgotten passwords across various applications...',
     date: '2024-01-14',
     link: 'articles/password-reset.html'
