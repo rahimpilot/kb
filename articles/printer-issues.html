@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer Not Responding - Service Desk KB</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .article-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .article-content h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .article-content h3 {
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .article-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1rem 0 1rem 2rem;
+            line-height: 1.8;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .step {
+            background-color: var(--bg-color);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .step-number {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .warning-box {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+
+        .warning-box strong {
+            color: #92400e;
+        }
+
+        .info-box {
+            background-color: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+
+        .info-box strong {
+            color: #1e40af;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 2rem;
+            transition: all 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .related-articles {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .related-articles h3 {
+            margin-bottom: 1rem;
+        }
+
+        .related-link {
+            display: block;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background-color: var(--bg-color);
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: all 0.2s ease;
+        }
+
+        .related-link:hover {
+            background-color: var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>📚 Service Desk Knowledge Base</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="article-content">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a> / <a href="../index.html">Printer Issues</a> / Printer Not Responding
+            </nav>
+
+            <h1>Printer Not Responding</h1>
+            
+            <div class="article-meta">
+                <span class="category-badge troubleshooting">Troubleshooting</span>
+                <span class="article-date">📅 Last Updated: January 10, 2024</span>
+            </div>
+
+            <!-- Article Content Section -->
+            <section>
+                <p><strong>Having trouble getting your printer to respond? This guide covers common printer issues and provides step-by-step solutions to get your printer working again.</strong></p>
+                
+                <h2>Overview</h2>
+                <p>Printer problems are among the most common technical issues in office environments. This article will help you diagnose and resolve printer connectivity issues, driver problems, and common printing errors.</p>
+
+                <div class="info-box">
+                    <strong>💡 Tip:</strong> Before troubleshooting, check if other users can print to the same printer. This helps determine if it's a local or network issue.
+                </div>
+
+                <h2>Step-by-Step Solution</h2>
+                
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Check Physical Connections</strong>
+                    <p>Verify that the printer is powered on and all cables are securely connected. For USB printers, try a different USB port. For network printers, ensure the Ethernet cable is properly connected or WiFi is enabled.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Restart Printer and Computer</strong>
+                    <p>Turn off the printer completely, wait 30 seconds, then turn it back on. Restart your computer as well. This simple step resolves many temporary communication issues.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Check Print Queue</strong>
+                    <p>Open the print queue on your computer (Devices and Printers → Right-click printer → See what's printing). Cancel all pending print jobs and try printing again.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <strong>Set as Default Printer</strong>
+                    <p>Ensure the correct printer is set as default: Open Settings → Devices → Printers & scanners → Select your printer → Click "Manage" → Set as default.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <strong>Update or Reinstall Printer Drivers</strong>
+                    <p>Outdated or corrupted drivers can cause printer issues. Visit the manufacturer's website to download the latest drivers, or use Windows Update to check for driver updates.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">6</span>
+                    <strong>Run Printer Troubleshooter</strong>
+                    <p>Windows has a built-in troubleshooter: Settings → Update & Security → Troubleshoot → Additional troubleshooters → Printer → Run the troubleshooter.</p>
+                </div>
+
+                <div class="warning-box">
+                    <strong>⚠️ Warning:</strong> When reinstalling printer drivers, completely remove the old driver first to avoid conflicts. Use "Print Management" or manufacturer's uninstaller tool.
+                </div>
+
+                <h2>Additional Information</h2>
+                <p>If the above steps don't resolve your issue, there may be network configuration problems or printer hardware issues requiring IT support.</p>
+
+                <h3>Common Issues</h3>
+                <ul>
+                    <li><strong>Printer Offline:</strong> Right-click the printer → uncheck "Use Printer Offline"</li>
+                    <li><strong>Network Printer Not Found:</strong> Verify printer IP address and network connectivity</li>
+                    <li><strong>Print Spooler Service Stopped:</strong> Restart the Print Spooler service in Services.msc</li>
+                    <li><strong>Paper Jam:</strong> Open printer panels and carefully remove any stuck paper</li>
+                    <li><strong>Low Ink/Toner:</strong> Check printer display or software for ink/toner levels</li>
+                </ul>
+
+                <h3>Network Printer Troubleshooting</h3>
+                <ol>
+                    <li>Verify printer IP address (print configuration page from printer menu)</li>
+                    <li>Ping the printer IP from Command Prompt: <code>ping [printer-ip]</code></li>
+                    <li>Check if printer is on the same network subnet</li>
+                    <li>Verify firewall isn't blocking printer communication (port 9100 for most printers)</li>
+                    <li>Contact IT if printer needs to be re-added to network</li>
+                </ol>
+
+                <h2>Summary</h2>
+                <p>Most printer issues can be resolved by checking connections, restarting devices, clearing the print queue, and updating drivers. If problems persist after trying these steps, contact IT support with details about error messages and what you've already tried.</p>
+            </section>
+
+            <!-- Related Articles -->
+            <div class="related-articles">
+                <h3>Related Articles</h3>
+                <a href="wifi-issues.html" class="related-link">→ WiFi Connection Issues</a>
+                <a href="hardware-wont-turn-on.html" class="related-link">→ Computer Won't Turn On</a>
+                <a href="../contact.html" class="related-link">→ Contact IT Support</a>
+            </div>
+
+            <a href="../index.html" class="back-button">← Back to Knowledge Base</a>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Service Desk Knowledge Base. All rights reserved.</p>
+            <p>Need help? <a href="../contact.html" class="footer-link">Contact Support</a></p>
+        </div>
+    </footer>
+</body>
+</html>

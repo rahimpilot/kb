@@ -134,6 +134,7 @@ function updateSectionTitle(category) {
         'hardware': 'Hardware Issues',
         'software': 'Software & Applications',
         'network': 'Network & Connectivity',
+        'printer': 'Printer Issues',
         'account': 'Account Access',
         'troubleshooting': 'General Troubleshooting'
     };

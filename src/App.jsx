@@ -44,7 +44,7 @@ const articles = [
   },
   {
     id: 6,
-    category: 'troubleshooting',
+    category: 'printer',
     title: 'Printer Not Responding',
     excerpt: 'Common printer issues and how to resolve them quickly...',
     date: '2024-01-10',
