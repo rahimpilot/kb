@@ -19,6 +19,14 @@ const articles = [
     link: 'articles/password-reset.html'
   },
   {
+    id: 7,
+    category: 'software',
+    title: 'AMS Password Reset and Errors',
+    excerpt: 'Comprehensive guide for resolving AMS password issues and common login errors...',
+    date: '2024-12-17',
+    link: 'articles/ams-password-reset.html'
+  },
+  {
     id: 3,
     category: 'network',
     title: 'WiFi Connection Issues',
